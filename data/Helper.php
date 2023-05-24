@@ -2,7 +2,7 @@
 
 namespace Helper;
 
-function helper()
+function helpme()
 {
     echo "Help Me" . PHP_EOL;
 }

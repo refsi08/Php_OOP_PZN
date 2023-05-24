@@ -12,5 +12,5 @@ namespace { // global namespace
     // mengakses namespace constant
     echo Helper\APPLICATION . PHP_EOL;
     // mengakses namespace function
-    Helper\helper();
+    Helper\helpme();
 }
