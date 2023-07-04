@@ -3,7 +3,7 @@
 class Product
 {
     protected string $name;
-    private int $price;
+    protected int $price;
 
     public function __construct(string $name, int $price)
     {
@@ -27,5 +27,6 @@ class ProductDummy extends Product
     function info()
     {
         echo "Ini adalah buah $this->name" . PHP_EOL; // name bisa diakses daari class product karna visibility nya sudah diubah menjadi protected
+        echo "Harga Buah $this->name adalah $this->price" . PHP_EOL; // name bisa diakses daari class product karna visibility nya sudah diubah menjadi protected
     }
 }
