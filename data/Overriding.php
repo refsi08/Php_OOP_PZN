@@ -22,12 +22,14 @@ class Manager
 class VicePresident extends Manager
 {
     // function overriding mendeklarasikan function dari class parent
+    // boleh merubah argumen tapi tidak direkomendasikan
     function sayHello(string $name): void
     {
         echo "Hi $name, my name is vp $this->name" . PHP_EOL;
     }
 
-    // function constructor overriding mendeklarasikan function dari class parent
+    // constructor overriding mendeklarasikan function dari class parent
+    // boleh merubah argumen dan direkomendasikan
     function __construct(string $name = "")
     {
         // tidak wajib, tapi direkomendasikan
