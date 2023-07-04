@@ -20,6 +20,6 @@ class Rectangle extends Shape
 
     function getParentCorner(): int
     {
-        return parent::getCorner(); // mengambil function yang ada di parent class
+        return parent::getCorner(); // mengambil function yang ada di parent class menggunakan kata kunci parent
     }
 }
