@@ -20,10 +20,14 @@ class FrontEndProgrammer extends programmer
 
 class Company
 {
+    /**
+     * Fungsi tipe programmer diguakan sebagai polymorphism untuk merubah bentuk
+     * dari class parent dan child yang dimiliki
+     */
     public Programmer $programmer;
 }
 
-// contoh polymorphism untuk function
+// contoh polymorphism untuk function argument
 function sayHelloProgrammer(Programmer $programmer)
 {
     return "Hello Programmer $programmer->name" . PHP_EOL;
