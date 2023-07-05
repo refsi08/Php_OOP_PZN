@@ -1,17 +1,15 @@
 <?php
 
-use Data\Cat;
-use Data\Dog;
+use Data\{Animal, Cat, Dog};
 
 require_once "data/Animal.php";
 
-$animal = new Cat();
-$animal->name = "Audi";
+$cat = new Cat();
+$cat->name = "Audi";
+$cat->run();
 
-echo $animal->run();
 
+$dog = new Dog();
+$dog->name = "Rizki";
 
-$animal = new Dog();
-$animal->name = "Rizki";
-
-echo $animal->run();
+$dog->run();
