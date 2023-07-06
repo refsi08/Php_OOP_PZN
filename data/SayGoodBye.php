@@ -52,13 +52,20 @@ class ParentPerson
     }
 }
 
-class Person
+// trait inheritance
+trait All
 {
     // semua function bisa di gunakan di class person
     use SayGoodBye, SayHello, HasName, CanRun;
-        // bisa di overrida public->private
-        // hello as private;
-        // goodBye as private;
+    // bisa di overrida public->private
+    // hello as private;
+    // goodBye as private;
+}
+
+class Person extends ParentPerson
+{
+    // trait inheritance menggunakan kata kunci use
+    use All;
 
     public function run(): void
     {
