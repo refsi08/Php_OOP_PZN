@@ -11,4 +11,6 @@ $person->hello("Audi");
 $person->name = "siapa ya";
 var_dump($person->name);
 
+$person->run();
+
 ?>
