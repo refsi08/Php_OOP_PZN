@@ -11,8 +11,21 @@ class SocialMedia
 
 class Facebook extends SocialMedia
 {
+    /**
+     * Jika sebuah function kita tambahkan kata kunci final, maka artinya funtion tersebut tidak bisa
+     * di override lagi di class child nya
+     */
+    public function login(string $username, string $password): bool
+    {
+        return true;
+    }
 }
 
 class FakeFacebook extends Facebook
 {
+    // function override
+    public function login(string $username, string $password): bool
+    {
+        return false;
+    }
 }
